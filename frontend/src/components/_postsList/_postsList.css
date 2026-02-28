@@ -1,0 +1,57 @@
+@import '../../variables.css';
+
+.PostsList-Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+
+.PostsList-Buttons svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 1em;
+}
+.PostsList-Buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+}
+.PostsList-Buttons button:hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+.PostsList-Buttons .Filter {
+  background-color: var(--button-color);
+  color: var(--text-color);
+}
+.PostsList-Buttons .Filter:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+.PostsList-Buttons .CreateEventButton {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  margin-left: auto;
+}
+.PostsList-Buttons .CreateEventButton:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+@media (max-width: 750px) {
+  .PostsList-Buttons span {
+    display: none;
+    gap: 0em;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,206 @@
+@import '../../variables.css';
+
+p {
+    font-size: clamp(16px, 1.1vw, 16px);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+h2 {
+    font-size: clamp(24px, 1.5vw, 24px);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+.content-wrapper {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100dvh;
+    grid-template-columns: 204px 1fr 290px;
+}
+.left-wrapper {
+    grid-column: 1;
+}
+.right-wrapper {
+    grid-column: 3;
+}
+.main-content {
+    grid-column: 2;
+    width: 100%;
+}
+.post-list {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    margin: 1rem;
+
+}
+.user-ewrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.home-buttons {
+    display: flex;
+    width: 97%;
+    flex-direction: row;
+    height: auto;
+    margin: 0.5rem 1rem 1rem 1rem;
+    justify-content: space-between;
+}
+.home-buttons .filters{
+     display:flex;
+     flex-direction: row;
+     box-sizing:border-box;
+}
+ .filters .filter{
+    padding: 0px 2px 0px 2px;
+    margin: 0.4rem;
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    border-radius: 14px;
+    font-weight: bold;
+    background-color: var(--post-button-color);
+    color: var(--background-color);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    white-space: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.Select-wrapper {
+    width: auto;
+}
+.Select-wrapper  .react-select__control {
+    border: none;
+    padding: 0;
+    border-radius: 14px;
+    background-color: var(--post-button-color);
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: none;
+    height: 34.3px;
+    align-items: center;
+    display: flex;
+}
+ .Select-wrapper .react-select__single-value {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: var(--background-color);
+}
+.Select-wrapper .react-select__placeholder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: var(--background-color);
+}
+.Select-wrapper .react-select__indicators {
+    display: none;
+}
+.Select-wrapper  .react-select__indicators-seperator {
+    display: none;
+}
+.Select-wrapper .react-select__option--is-selected {
+    background-color: var(--secondary-background-color);
+    border: none;
+    box-shadow: none;
+    color: var(--text-color);
+}
+.Select-wrapper .react-select__menu {
+    background-color: var(--secondary-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+.Select-wrapper .react-select__option {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.Select-wrapper .react-select__option--is-focused {
+    background-color: var(--post-button-color);
+    color: var(--background-color);
+}
+.Select-wrapper .dropdown-option {
+    display: flex;
+    align-items: center;
+}
+.Select-wrapper .dropdown-option #icon {
+    font-size: 1rem;
+}
+.filters #icon{
+    margin-right: 0.35rem;
+    display: grid;
+    place-items: center;
+}
+.filters #title{
+    display: grid;
+    place-items: center;
+}
+.home-buttons .extra{
+     float: left;
+     box-sizing: border-box;
+}
+.extra #createpost{
+    padding: 8px 16px 8px 12px;
+    width: 180px;
+    margin: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    border-radius: 14px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    white-space: nowrap;
+}
+#createpost #icon{
+    margin-right: 1rem;
+    display: grid;
+    place-items: center;
+}
+#createpost #title{
+    display: grid;
+    place-items: center;
+}
+.user-post-title{
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media (max-width: 960px) {
+    .content-wrapper {
+        grid-template-columns: 50px 1fr !important;
+    }
+    .right-wrapper {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .content-wrapper {
+        grid-template-columns: 204px 1fr;
+    }
+    .right-wrapper {
+        display: none;
+    }
+}

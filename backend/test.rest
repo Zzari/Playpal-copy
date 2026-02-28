@@ -1,0 +1,64 @@
+POST http://localhost:8080/crud/addEvent
+Content-Type: application/json
+
+{
+    "name": "Animo Handball",
+    "sport": "Handball",
+    "date": "11-20-2023",
+    "place": "somewhere",
+    "members": ["one", "two", "three"],
+    "organizer": "DLSU"
+}
+
+###
+
+POST http://localhost:8080/crud/updateEvent
+Content-Type: application/json
+
+{
+    "name": "Animo Handball",
+    "newName": "Animo Basketball",
+    "sport": "Basketball",
+    "date": "11-20-2026",
+    "place": "Anywhere",
+    "members": ["one", "two", "three"],
+    "organizer": "Someone"
+}
+
+###
+
+POST http://localhost:8080/crud/join
+Content-Type: application/json
+
+{
+    "name": "Animo Basketball",
+    "newMember": "four"
+}
+
+###
+
+POST http://localhost:8080/crud/join
+Content-Type: application/json
+
+{
+    "name": "Animo Basketball",
+    "newMember": "three"
+}
+
+###
+
+POST http://localhost:8080/crud/quit
+Content-Type: application/json
+
+{
+    "name": "Animo Basketball",
+    "newMember": "three"
+}
+
+
+###
+GET http://localhost:8080/crud/eventlist
+
+###
+
+GET http://localhost:8080/crud/listall

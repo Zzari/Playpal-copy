@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.7 on win32)" generated="2025-07-22T16:37:53.209558" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Tests" source="C:\Users\Admin\Documents\GitHub\playpal\frontend\src\pages\Login\login_tests.robot">
+<kw name="New Browser" owner="Browser" type="SETUP">
+<msg time="2025-07-22T16:37:53.393030" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Admin\\Documents\\GitHub\\playpal\\frontend\\src\\pages\\Login\\browser\\traces\\temp\\726fd0df-fac0-4f10-82fd-d8c00f948d1d"}</msg>
+<msg time="2025-07-22T16:37:53.419171" level="INFO">Starting Browser process C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:55418</msg>
+<msg time="2025-07-22T16:37:54.755250" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Admin\\Documents\\GitHub\\playpal\\frontend\\src\\pages\\Login\\browser\\traces\\temp\\726fd0df-fac0-4f10-82fd-d8c00f948d1d"}</msg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-07-22T16:37:53.392032" elapsed="1.363218"/>
+</kw>
+<test id="s1-t1" name="Render Logo And Tagline" line="13">
+<kw name="New Page" owner="Browser" type="SETUP">
+<msg time="2025-07-22T16:37:56.549572" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/login</msg>
+<msg time="2025-07-22T16:37:56.549572" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-07-22T16:37:54.763791" elapsed="1.785781"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-07-22T16:37:56.603730" level="INFO">Locator found successfully.</msg>
+<arg>img[alt*="PlayPal Logo"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-07-22T16:37:56.549572" elapsed="0.054158"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-07-22T16:37:56.630905" level="INFO">Text: 'Find Your Fit. Play with Pals'</msg>
+<arg>text=Find Your Fit. Play with Pals</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-22T16:37:56.603730" elapsed="0.027175"/>
+</kw>
+<msg time="2025-07-22T16:37:56.645498" level="INFO">Switching context to context=7d56f965-b9dc-4b74-b556-a27cf294e015 in CURRENT</msg>
+<msg time="2025-07-22T16:37:56.652537" level="INFO">Successfully changed active context: context=7d56f965-b9dc-4b74-b556-a27cf294e015</msg>
+<msg time="2025-07-22T16:37:56.695462" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-07-22T16:37:54.755250" elapsed="1.875655"/>
+</test>
+<test id="s1-t2" name="Render Login Instructions And Handbook Link" line="17">
+<kw name="New Page" owner="Browser" type="SETUP">
+<msg time="2025-07-22T16:37:58.277804" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/login</msg>
+<msg time="2025-07-22T16:37:58.277804" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-07-22T16:37:56.702494" elapsed="1.575310"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-07-22T16:37:58.350190" level="INFO">Text: 'Log in with your DLSU Google account to proceed with your access to PlayPal.'</msg>
+<arg>text=Log in with your DLSU Google account</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-22T16:37:58.278803" elapsed="0.071387"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-07-22T16:37:58.360793" level="INFO">Locator found successfully.</msg>
+<msg time="2025-07-22T16:37:58.360793" level="INFO">${link} = role=link[name="DLSU Student Handbook"]</msg>
+<var>${link}</var>
+<arg>role=link[name="DLSU Student Handbook"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-07-22T16:37:58.350190" elapsed="0.010603"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-07-22T16:37:58.370839" level="INFO">Attribute is: 'https://www.dlsu.edu.ph/wp-content/uploads/pdf/osa/student-handbook.pdf'</msg>
+<msg time="2025-07-22T16:37:58.370839" level="INFO">${href} = https://www.dlsu.edu.ph/wp-content/uploads/pdf/osa/student-handbook.pdf</msg>
+<var>${href}</var>
+<arg>${link}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-22T16:37:58.360793" elapsed="0.010046"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${href}</arg>
+<arg>dlsu.edu.ph</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-07-22T16:37:58.371853" elapsed="0.000000"/>
+</kw>
+<msg time="2025-07-22T16:37:58.382442" level="INFO">Switching context to context=e295b968-63b7-412c-bc85-e1fb2cc902b7 in CURRENT</msg>
+<msg time="2025-07-22T16:37:58.388441" level="INFO">Successfully changed active context: context=e295b968-63b7-412c-bc85-e1fb2cc902b7</msg>
+<msg time="2025-07-22T16:37:58.432143" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-07-22T16:37:56.696463" elapsed="1.675390"/>
+</test>
+<test id="s1-t3" name="Render Login Button With Icon And Text" line="23">
+<kw name="New Page" owner="Browser" type="SETUP">
+<msg time="2025-07-22T16:38:00.080874" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/login</msg>
+<msg time="2025-07-22T16:38:00.080874" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-07-22T16:37:58.436643" elapsed="1.644231"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-07-22T16:38:00.136801" level="INFO">Locator found successfully.</msg>
+<arg>role=button[name="Log In with DLSU Google Account"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-07-22T16:38:00.081872" elapsed="0.054929"/>
+</kw>
+<msg time="2025-07-22T16:38:00.152527" level="INFO">Switching context to context=4c72028d-28f8-47e0-8102-3a73ccc8ef19 in CURRENT</msg>
+<msg time="2025-07-22T16:38:00.157528" level="INFO">Successfully changed active context: context=4c72028d-28f8-47e0-8102-3a73ccc8ef19</msg>
+<msg time="2025-07-22T16:38:00.201874" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-07-22T16:37:58.433133" elapsed="1.704676"/>
+</test>
+<test id="s1-t4" name="Clicking Login Button Opens Google OAuth URL" line="26">
+<kw name="New Page" owner="Browser" type="SETUP">
+<msg time="2025-07-22T16:38:01.789451" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/login</msg>
+<msg time="2025-07-22T16:38:01.789451" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-07-22T16:38:00.206389" elapsed="1.583578"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-07-22T16:38:01.790972" level="INFO">Clicks the element 'role=button[name="Log In with DLSU Google Account"]'.</msg>
+<arg>role=button[name="Log In with DLSU Google Account"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-22T16:38:01.789967" elapsed="2.843291"/>
+</kw>
+<kw name="Wait For Navigation" owner="Browser">
+<msg time="2025-07-22T16:38:14.767312" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-22T16:38:14.767312" level="INFO">See also file:///C:/Users/Admin/Documents/GitHub/playpal/frontend/src/pages/Login/playwright-log.txt for additional details.</msg>
+<msg time="2025-07-22T16:38:14.769310" level="FAIL">TimeoutError: page.waitForNavigation: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "http://localhost:3000/auth/google" until "load"
+============================================================</msg>
+<arg>url=${GOOGLE_OAUTH_URL}</arg>
+<arg>timeout=10s</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until page has navigated to given ``url``.</doc>
+<status status="FAIL" start="2025-07-22T16:38:04.634251" elapsed="10.164220">TimeoutError: page.waitForNavigation: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "http://localhost:3000/auth/google" until "load"
+============================================================</status>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-07-22T16:38:14.798471" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>/auth/google</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-07-22T16:38:14.798471" elapsed="0.001002"/>
+</kw>
+<msg time="2025-07-22T16:38:14.810511" level="INFO">Switching context to context=110759fd-d9c9-4a72-89d1-5e0758410f57 in CURRENT</msg>
+<msg time="2025-07-22T16:38:14.820539" level="INFO">Successfully changed active context: context=110759fd-d9c9-4a72-89d1-5e0758410f57</msg>
+<msg time="2025-07-22T16:38:14.856334" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-07-22T16:38:00.202885" elapsed="14.596588">TimeoutError: page.waitForNavigation: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "http://localhost:3000/auth/google" until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-07-22T16:38:15.035558" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-22T16:38:14.858340" elapsed="0.177218"/>
+</kw>
+<status status="FAIL" start="2025-07-22T16:37:53.210569" elapsed="21.824989"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Tests" id="s1" pass="3" fail="1" skip="0">Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

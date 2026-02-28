@@ -1,0 +1,142 @@
+@import '../../variables.css';
+
+.user-wrapper h2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0.5rem 0;
+    padding:0;
+}
+.main-content .user-wrapper{
+    background-color: var(--secondary-background-color);
+    min-height: 15.5rem;
+    margin: 0.7rem 0.7rem 0 0.7rem;
+    padding: 1rem 1.8rem 1rem 1.8rem;
+    border-radius: 30px;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.user-wrapper .user-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+}
+.user-wrapper #user-image{
+    min-height: 12rem;
+    min-width: 12rem;
+    background-color: var(--empty-profile-img-color);
+    border-radius: 100px;
+    margin-right: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.user-wrapper .tags {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.user-wrapper .tags span {
+    padding: 4px 5px 4px 5px;
+    background-color: var(--secondary-color);
+    color: var(--log-in-text-color);
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0.8rem;     
+    margin-right: 0.5rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    max-height: 16px;
+}
+.user-wrapper #user-edit {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+.user-wrapper #user-edit svg{
+    float:right;
+    margin: 0 0.5rem 0 0.5rem;
+    color: var(--post-font-color);
+    height: 20px;
+    width: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.1s ease;
+}
+
+.user-wrapper #user-edit:hover svg {
+    opacity: 1;
+}
+
+/* Profile Edit Form Styles */
+.profile-edit-form {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.profile-bio-input {
+    width: 130%;
+    min-height: 80px;
+    max-height: 120px;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    font-family: inherit;
+    resize: vertical;
+    background-color: var(--secondary-background-color);
+    color: var(--post-font-color);
+}
+
+.form-row.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.profile-tag-input {
+    padding: 4px 5px 4px 5px;
+    background-color: var(--secondary-color);
+    color: var(--log-in-text-color);
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    height: 14px;
+    width: 22px;
+    flex: 1;
+}
+
+.profile-tag-input::placeholder {
+    color: var(--log-in-text-color);
+}
+
+.form-buttons button {
+    padding: 6px 8px;
+}
+
+.profile-save-button {
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--post-button-color);
+    color: var(--text-color);
+}
+
+.profile-save-button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow);
+}

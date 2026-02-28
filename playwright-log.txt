@@ -1,0 +1,158 @@
+{"level":30,"time":"2025-08-07T17:22:20.897Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Listening on 127.0.0.1:49224"}
+(node:79064) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-07T17:22:20.940Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-07T17:22:21.353Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-08-07T17:22:21.354Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-07T17:22:21.354Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-07T17:22:21.362Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:21.363Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:21.370Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-07T17:22:21.371Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-08-07T17:22:21.390Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active context"}
+{"level":30,"time":"2025-08-07T17:22:21.788Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-07T17:22:21.788Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active page"}
+{"level":30,"time":"2025-08-07T17:22:22.059Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-07T17:22:22.068Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-08-07T17:22:22.068Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Strict mode is enabled, find Locator with img[alt*=\"PlayPal Logo\"] in page."}
+{"level":30,"time":"2025-08-07T17:22:22.118Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getElement"}
+{"level":30,"time":"2025-08-07T17:22:22.123Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getText"}
+{"level":30,"time":"2025-08-07T17:22:22.123Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Strict mode is enabled, find Locator with text=Find Your Fit. Play with Pals in page."}
+{"level":30,"time":"2025-08-07T17:22:22.160Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Retrieved text for element text=Find Your Fit. Play with Pals containing Find Your Fit. Play with Pals"}
+{"level":30,"time":"2025-08-07T17:22:22.160Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getText"}
+{"level":30,"time":"2025-08-07T17:22:22.168Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.171Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.174Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.176Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.179Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.181Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.185Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.187Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.190Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active context"}
+{"level":30,"time":"2025-08-07T17:22:22.190Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changing current active page: page=b4644335-32e2-4078-b990-dd1cf13cb893"}
+{"level":30,"time":"2025-08-07T17:22:22.190Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active page"}
+{"level":30,"time":"2025-08-07T17:22:22.195Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-07T17:22:22.222Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Removed page=44c77ef6-c39c-4ecd-bfc9-04e3975e4312 from context=c5f3f0cc-bb51-4d5c-b62a-0f864d262f86 page stack"}
+{"level":30,"time":"2025-08-07T17:22:22.253Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-07T17:22:22.258Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.259Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.264Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-07T17:22:22.264Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-08-07T17:22:22.274Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active context"}
+{"level":30,"time":"2025-08-07T17:22:22.423Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-07T17:22:22.423Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active page"}
+{"level":30,"time":"2025-08-07T17:22:22.673Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-07T17:22:22.679Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getText"}
+{"level":30,"time":"2025-08-07T17:22:22.680Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Strict mode is enabled, find Locator with text=Log in with your DLSU Google account in page."}
+{"level":30,"time":"2025-08-07T17:22:22.771Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Retrieved text for element text=Log in with your DLSU Google account containing Log in with your DLSU Google account to proceed with your access to PlayPal."}
+{"level":30,"time":"2025-08-07T17:22:22.771Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getText"}
+{"level":30,"time":"2025-08-07T17:22:22.776Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-08-07T17:22:22.776Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Strict mode is enabled, find Locator with role=link[name=\"DLSU Student Handbook\"] in page."}
+{"level":30,"time":"2025-08-07T17:22:22.787Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getElement"}
+{"level":30,"time":"2025-08-07T17:22:22.792Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2025-08-07T17:22:22.792Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Strict mode is enabled, find Locator with role=link[name=\"DLSU Student Handbook\"] in page."}
+{"level":30,"time":"2025-08-07T17:22:22.809Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Retrieved attribute for element role=link[name=\"DLSU Student Handbook\"] containing https://www.dlsu.edu.ph/wp-content/uploads/pdf/osa/student-handbook.pdf"}
+{"level":30,"time":"2025-08-07T17:22:22.809Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2025-08-07T17:22:22.818Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.821Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.824Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.826Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.829Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.831Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.837Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.839Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.841Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active context"}
+{"level":30,"time":"2025-08-07T17:22:22.841Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changing current active page: page=baadb655-1c74-4c80-942a-d1104bc13990"}
+{"level":30,"time":"2025-08-07T17:22:22.841Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active page"}
+{"level":30,"time":"2025-08-07T17:22:22.846Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-07T17:22:22.868Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Removed page=3c09d707-42fc-4f1b-89e1-95aeedf64d7f from context=514db8c0-4dee-4f06-9c74-8e1b77b340e0 page stack"}
+{"level":30,"time":"2025-08-07T17:22:22.901Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-07T17:22:22.908Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.909Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:22.914Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-07T17:22:22.914Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-08-07T17:22:22.924Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active context"}
+{"level":30,"time":"2025-08-07T17:22:23.093Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-07T17:22:23.093Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active page"}
+{"level":30,"time":"2025-08-07T17:22:23.607Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-07T17:22:23.613Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-08-07T17:22:23.613Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Strict mode is enabled, find Locator with role=button[name=\"Log In with DLSU Google Account\"] in page."}
+{"level":30,"time":"2025-08-07T17:22:23.672Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getElement"}
+{"level":30,"time":"2025-08-07T17:22:23.677Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.681Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.685Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.687Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.689Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.691Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.695Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.701Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.704Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active context"}
+{"level":30,"time":"2025-08-07T17:22:23.704Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changing current active page: page=77c3b8f4-49a9-452b-8bc7-5a809d88623a"}
+{"level":30,"time":"2025-08-07T17:22:23.704Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active page"}
+{"level":30,"time":"2025-08-07T17:22:23.707Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-07T17:22:23.728Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Removed page=a7edaa97-a0b7-4276-89ef-dd18ffcb718b from context=e1773465-981b-44a5-ba91-33f3c304bcab page stack"}
+{"level":30,"time":"2025-08-07T17:22:23.762Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-07T17:22:23.773Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.773Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:23.778Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-07T17:22:23.778Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-08-07T17:22:23.788Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active context"}
+{"level":30,"time":"2025-08-07T17:22:23.952Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-07T17:22:23.952Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active page"}
+{"level":30,"time":"2025-08-07T17:22:24.183Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-07T17:22:24.188Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-07T17:22:24.188Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Strict mode is enabled, find Locator with role=button[name=\"Log In with DLSU Google Account\"] in page."}
+{"level":30,"time":"2025-08-07T17:22:25.409Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method click"}
+{"level":30,"time":"2025-08-07T17:22:25.414Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method waitForNavigation"}
+{"level":30,"time":"2025-08-07T17:22:35.424Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Error of node method waitForNavigation"}
+================= Original suppressed error =================
+page.waitForNavigation: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://playpal-stsweng.vercel.app/auth/google" until "load"
+  navigated to "https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S-183638053%3A1754587349082518&client_id=628848313-5dku2rq31nupr5m4r53poh8haals7d27.apps.googleusercontent.com&o2v=2&redirect_uri=https%3A%2F%2Fplaypal-backend-stsweng.vercel.app%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=profile+email&service=lso&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPpBL5cRT_sWaj4E_Hn-vd9dDcP9nCqauuNuc-ZoUugtb6sjN7XEP1hNPRAqEalZ53CoAFzzQmLchdt_YXz4slqPNhRP8XJkJsVUCiga9acAhbNk6XNBvl8JutN5HcGXOM5dt0YhQO4nNOTcwtgTv2NNAIDWoFV6Ok99uyAXPqZdtZCWEJQbNYeZwmPi-xWFFlZlupu1Ek8PrMazn1l4YgbmJ--cezPFfL1XFX-d4KiXu1WLrSVf54k1gUUbYcJ_e8xz1wsFguSc72VDExZDUZTK9nBDXEbmToWMMdVRs_xKLNehkTGgdsbab8KaIcimVU90dAHL4psPhWR-nQ3uqcyh6oywKvlMnlWgbT5tKcAATV47o0NXM7y0d_LHMCp_z03fEBhQw6UZ7QN3yU2FuzH_GAlXwfZktId64zuqW7VT-QXNkuiMamS4yT1qNDxWurXgRvJPjtGXAjN0GHRpghNdL5zXeoy_XWOLuSXrOiu2hJkYi0%26flowName%3DGeneralOAuthFlow%26as%3DS-183638053%253A1754587349082518%26client_id%3D628848313-5dku2rq31nupr5m4r53poh8haals7d27.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Fplaypal-backend-stsweng.vercel.app&rart=ANgoxcc6X0FO6dVxc9L5iH9phYvUv0nvxMqoqS_U-r-iCwF3yK-HsSacJbkFa1CB1ZrkyR4waX4CgsJ4I3Zf9ymsWUiVd4P81JNkljKfoWBpTJkqWSOix4E"
+============================================================
+    at waitForNavigation (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11012:14)
+    at PlaywrightServer.waitForNavigation (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13163:34)
+    at Object.onReceiveHalfClose (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-08-07T17:22:35.431Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-07T17:22:35.431Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","Take screenshot with options: ":{"path":"C:\\Users\\Admin\\Documents\\GitHub\\playpal\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-07T17:22:35.523Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-07T17:22:35.539Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.540Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.542Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.543Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.544Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.546Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.548Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.550Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.551Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active context"}
+{"level":30,"time":"2025-08-07T17:22:35.551Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changing current active page: page=71b70f90-db8e-453b-ba84-7a808854a407"}
+{"level":30,"time":"2025-08-07T17:22:35.551Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Changed active page"}
+{"level":30,"time":"2025-08-07T17:22:35.554Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-07T17:22:35.563Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Removed page=eee0205a-26be-481b-a2a3-1cbfa1cf696d from context=9e1ef6ee-fea5-448e-bac6-e5f50df23c6d page stack"}
+{"level":30,"time":"2025-08-07T17:22:35.611Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-07T17:22:35.618Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-07T17:22:35.840Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-07T17:22:35.844Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:35.844Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-07T17:22:42.033Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-07T17:22:42.033Z","pid":79064,"hostname":"DESKTOP-DH0SJ57","msg":"End of node method closeAllBrowsers"}

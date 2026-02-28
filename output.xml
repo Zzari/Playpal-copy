@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.7 on win32)" generated="2025-08-08T01:22:08.237961" rpa="false" schemaversion="5">
+<suite id="s1" name="Test-Scripts" source="C:\Users\Admin\Documents\GitHub\playpal\test-scripts">
+<suite id="s1-s1" name="Cancel Post" source="C:\Users\Admin\Documents\GitHub\playpal\test-scripts\cancel_post.robot">
+<test id="s1-s1-t1" name="User Can Cancel Creating an Event" line="17">
+<kw name="Open Playpal Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:08.679094" level="INFO">Opening browser 'headlesschrome' to base url 'https://playpal-stsweng.vercel.app/home'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-08T01:22:08.678098" elapsed="1.833074"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-08T01:22:10.512180" elapsed="0.034887"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CREATE_BUTTON}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-08-08T01:22:10.548074" elapsed="0.018120"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:08.677087" elapsed="1.889107"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:10.567204" level="INFO">Clicking element 'css=button#createpost'.</msg>
+<arg>${CREATE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:10.567204" elapsed="0.101267"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CANCEL_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-08T01:22:10.668471" elapsed="0.030603"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:10.700074" level="INFO">Clicking button 'xpath=//button[contains(text(), "Cancel")]'.</msg>
+<arg>${CANCEL_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:10.700074" elapsed="0.093755"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CREATE_BUTTON}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-08-08T01:22:10.793829" elapsed="0.022634"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:08.676536" elapsed="2.139927"/>
+</test>
+<status status="PASS" start="2025-08-08T01:22:08.275088" elapsed="2.542385"/>
+</suite>
+<suite id="s1-s2" name="Create Post" source="C:\Users\Admin\Documents\GitHub\playpal\test-scripts\create_post.robot">
+<test id="s1-s2-t1" name="Create Post" line="22">
+<kw name="Open Playpal Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:10.823512" level="INFO">Opening browser 'headlesschrome' to base url 'https://playpal-stsweng.vercel.app/home'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-08T01:22:10.822523" elapsed="1.507534"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-08T01:22:12.331591" elapsed="0.023109"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:10.822523" elapsed="1.532177"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:12.354700" level="INFO">Clicking element 'css=button#createpost'.</msg>
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:12.354700" elapsed="0.098173"/>
+</kw>
+<kw name="Create a Post">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:12.453883" level="INFO">Typing text 'Test Basketball Event' into text field 'css=input.post-title-input'.</msg>
+<arg>${POST_TITLE}</arg>
+<arg>Test Basketball Event</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:12.453883" elapsed="0.133753"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:12.588646" level="INFO">Typing text 'Basketball' into text field 'xpath=(//input[@class="post-tag-input"])[1]'.</msg>
+<arg>${SPORT_INPUT}</arg>
+<arg>Basketball</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:12.587636" elapsed="0.075063"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:12.662699" level="INFO">Typing text 'Razon 7th Floor' into text field 'xpath=(//input[@class="post-tag-input"])[2]'.</msg>
+<arg>${LOCATION_INPUT}</arg>
+<arg>Razon 7th Floor</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:12.662699" elapsed="0.082283"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:12.744982" level="INFO">Typing text '2025-08-05T10:00' into text field 'css=input.post-date-input'.</msg>
+<arg>${DATETIME_INPUT}</arg>
+<arg>2025-08-05T10:00</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:12.744982" elapsed="0.088103"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:12.453883" elapsed="0.379202"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:10.822523" elapsed="2.011572"/>
+</test>
+<status status="PASS" start="2025-08-08T01:22:10.818479" elapsed="2.015616"/>
+</suite>
+<suite id="s1-s3" name="Dashboard Tests" source="C:\Users\Admin\Documents\GitHub\playpal\test-scripts\dashboard_tests.robot">
+<test id="s1-s3-t1" name="View Posts" line="17">
+<kw name="Open Playpal Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:12.839604" level="INFO">Opening browser 'headlesschrome' to base url 'https://playpal-stsweng.vercel.app/home'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-08T01:22:12.839604" elapsed="1.427429"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-08T01:22:14.267033" elapsed="0.025105"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:12.839604" elapsed="1.452534"/>
+</kw>
+<kw name="Should See Posts Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css=div.post-list</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-08-08T01:22:14.293142" elapsed="0.009810"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:14.292138" elapsed="0.010814"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:12.839604" elapsed="1.463348"/>
+</test>
+<status status="PASS" start="2025-08-08T01:22:12.835092" elapsed="1.467860"/>
+</suite>
+<suite id="s1-s4" name="Dummy Test" source="C:\Users\Admin\Documents\GitHub\playpal\test-scripts\dummy_test.robot">
+<test id="s1-s4-t1" name="Dummy Test That Always Passes" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:14.307990" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-08T01:22:14.306975" elapsed="2.117019"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-08T01:22:17.424244" level="INFO">Slept 1 second.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-08T01:22:16.423994" elapsed="1.000250"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:17.428271" level="INFO">${title} = Google</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-08-08T01:22:17.424748" elapsed="0.003523"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-08T01:22:17.429273" level="INFO">Page title is: Google</msg>
+<arg>Page title is: ${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-08T01:22:17.429273" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-08-08T01:22:17.429273" level="INFO">Length is 6.</msg>
+<arg>${title}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2025-08-08T01:22:17.429273" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-08T01:22:17.430273" elapsed="2.124608"/>
+</kw>
+<doc>A simple test that opens a page and verifies the title</doc>
+<tag>dummy</tag>
+<status status="PASS" start="2025-08-08T01:22:14.306975" elapsed="5.247906"/>
+</test>
+<doc>Dummy test</doc>
+<status status="PASS" start="2025-08-08T01:22:14.303957" elapsed="5.250924"/>
+</suite>
+<suite id="s1-s5" name="Login Tests" source="C:\Users\Admin\Documents\GitHub\playpal\test-scripts\login_tests.robot">
+<kw name="New Browser" owner="Browser" type="SETUP">
+<msg time="2025-08-08T01:22:19.831195" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Admin\\Documents\\GitHub\\playpal\\browser\\traces\\temp\\f1673837-6df6-49f6-a60b-31170f2397c7"}</msg>
+<msg time="2025-08-08T01:22:19.864978" level="INFO">Starting Browser process C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:49224</msg>
+<msg time="2025-08-08T01:22:21.357892" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Admin\\Documents\\GitHub\\playpal\\browser\\traces\\temp\\f1673837-6df6-49f6-a60b-31170f2397c7"}</msg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-08T01:22:19.830188" elapsed="1.527704"/>
+</kw>
+<test id="s1-s5-t1" name="Render Logo And Tagline" line="15">
+<kw name="New Page" owner="Browser" type="SETUP">
+<msg time="2025-08-08T01:22:22.062476" level="INFO">Successfully initialized new page object and opened url: https://playpal-stsweng.vercel.app/login</msg>
+<msg time="2025-08-08T01:22:22.062476" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-08T01:22:21.366433" elapsed="0.696043"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-08-08T01:22:22.121144" level="INFO">Locator found successfully.</msg>
+<arg>img[alt*="PlayPal Logo"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-08-08T01:22:22.064993" elapsed="0.056151"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-08T01:22:22.161334" level="INFO">Text: 'Find Your Fit. Play with Pals'</msg>
+<arg>text=Find Your Fit. Play with Pals</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T01:22:22.121648" elapsed="0.039686"/>
+</kw>
+<msg time="2025-08-08T01:22:22.183503" level="INFO">Switching context to context=c5f3f0cc-bb51-4d5c-b62a-0f864d262f86 in CURRENT</msg>
+<msg time="2025-08-08T01:22:22.194682" level="INFO">Successfully changed active context: context=c5f3f0cc-bb51-4d5c-b62a-0f864d262f86</msg>
+<msg time="2025-08-08T01:22:22.255196" level="INFO">Successfully closed Context</msg>
+<doc>Checks that the logo and tagline are displayed on the login page</doc>
+<tag>smoke</tag>
+<tag>ui</tag>
+<status status="PASS" start="2025-08-08T01:22:21.357892" elapsed="0.804961"/>
+</test>
+<test id="s1-s5-t2" name="Render Login Instructions And Handbook Link" line="21">
+<kw name="New Page" owner="Browser" type="SETUP">
+<msg time="2025-08-08T01:22:22.675318" level="INFO">Successfully initialized new page object and opened url: https://playpal-stsweng.vercel.app/login</msg>
+<msg time="2025-08-08T01:22:22.675318" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-08T01:22:22.261262" elapsed="0.414056"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-08T01:22:22.773752" level="INFO">Text: 'Log in with your DLSU Google account to proceed with your access to PlayPal.'</msg>
+<arg>text=Log in with your DLSU Google account</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T01:22:22.676316" elapsed="0.097436"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-08-08T01:22:22.789335" level="INFO">Locator found successfully.</msg>
+<msg time="2025-08-08T01:22:22.789335" level="INFO">${link} = role=link[name="DLSU Student Handbook"]</msg>
+<var>${link}</var>
+<arg>role=link[name="DLSU Student Handbook"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-08-08T01:22:22.773752" elapsed="0.015583"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-08-08T01:22:22.811436" level="INFO">Attribute is: 'https://www.dlsu.edu.ph/wp-content/uploads/pdf/osa/student-handbook.pdf'</msg>
+<msg time="2025-08-08T01:22:22.811436" level="INFO">${href} = https://www.dlsu.edu.ph/wp-content/uploads/pdf/osa/student-handbook.pdf</msg>
+<var>${href}</var>
+<arg>${link}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T01:22:22.789335" elapsed="0.022101"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${href}</arg>
+<arg>dlsu.edu.ph</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-08-08T01:22:22.811436" elapsed="0.001113"/>
+</kw>
+<msg time="2025-08-08T01:22:22.834696" level="INFO">Switching context to context=514db8c0-4dee-4f06-9c74-8e1b77b340e0 in CURRENT</msg>
+<msg time="2025-08-08T01:22:22.845279" level="INFO">Successfully changed active context: context=514db8c0-4dee-4f06-9c74-8e1b77b340e0</msg>
+<msg time="2025-08-08T01:22:22.904143" level="INFO">Successfully closed Context</msg>
+<doc>Checks that login instructions and the student handbook link are present</doc>
+<tag>content</tag>
+<tag>ui</tag>
+<status status="PASS" start="2025-08-08T01:22:22.256200" elapsed="0.556349"/>
+</test>
+<test id="s1-s5-t3" name="Render Login Button With Icon And Text" line="29">
+<kw name="New Page" owner="Browser" type="SETUP">
+<msg time="2025-08-08T01:22:23.609437" level="INFO">Successfully initialized new page object and opened url: https://playpal-stsweng.vercel.app/login</msg>
+<msg time="2025-08-08T01:22:23.609437" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-08T01:22:22.911174" elapsed="0.698263"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-08-08T01:22:23.673352" level="INFO">Locator found successfully.</msg>
+<arg>role=button[name="Log In with DLSU Google Account"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-08-08T01:22:23.610437" elapsed="0.063923"/>
+</kw>
+<msg time="2025-08-08T01:22:23.693481" level="INFO">Switching context to context=e1773465-981b-44a5-ba91-33f3c304bcab in CURRENT</msg>
+<msg time="2025-08-08T01:22:23.707083" level="INFO">Successfully changed active context: context=e1773465-981b-44a5-ba91-33f3c304bcab</msg>
+<msg time="2025-08-08T01:22:23.764629" level="INFO">Successfully closed Context</msg>
+<doc>Ensures the login button with correct text and icon is present</doc>
+<tag>accessibility</tag>
+<tag>ui</tag>
+<status status="PASS" start="2025-08-08T01:22:22.905650" elapsed="0.768710"/>
+</test>
+<test id="s1-s5-t4" name="Clicking Login Button Opens Google OAuth URL" line="34">
+<kw name="New Page" owner="Browser" type="SETUP">
+<msg time="2025-08-08T01:22:24.185026" level="INFO">Successfully initialized new page object and opened url: https://playpal-stsweng.vercel.app/login</msg>
+<msg time="2025-08-08T01:22:24.185026" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${LOGIN_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-08T01:22:23.775146" elapsed="0.409880"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-08T01:22:24.187046" level="INFO">Clicks the element 'role=button[name="Log In with DLSU Google Account"]'.</msg>
+<arg>role=button[name="Log In with DLSU Google Account"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T01:22:24.186539" elapsed="1.224540"/>
+</kw>
+<kw name="Wait For Navigation" owner="Browser">
+<msg time="2025-08-08T01:22:35.524796" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-08T01:22:35.524796" level="INFO">See also file:///C:/Users/Admin/Documents/GitHub/playpal/playwright-log.txt for additional details.</msg>
+<msg time="2025-08-08T01:22:35.527308" level="FAIL">TimeoutError: page.waitForNavigation: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://playpal-stsweng.vercel.app/auth/google" until "load"
+  navigated to "https://accounts.google.com/v3/signin/identifier?opparams=%253F&amp;dsh=S-183638053%3A1754587349082518&amp;client_id=628848313-5dku2rq31nupr5m4r53poh8haals7d27.apps.googleusercontent.com&amp;o2v=2&amp;redirect_uri=https%3A%2F%2Fplaypal-backend-stsweng.vercel.app%2Fauth%2Fgoogle%2Fcallback&amp;response_type=code&amp;scope=profile+email&amp;service=lso&amp;flowName=GeneralOAuthFlow&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPpBL5cRT_sWaj4E_Hn-vd9dDcP9nCqauuNuc-ZoUugtb6sjN7XEP1hNPRAqEalZ53CoAFzzQmLchdt_YXz4slqPNhRP8XJkJsVUCiga9acAhbNk6XNBvl8JutN5HcGXOM5dt0YhQO4nNOTcwtgTv2NNAIDWoFV6Ok99uyAXPqZdtZCWEJQbNYeZwmPi-xWFFlZlupu1Ek8PrMazn1l4YgbmJ--cezPFfL1XFX-d4KiXu1WLrSVf54k1gUUbYcJ_e8xz1wsFguSc72VDExZDUZTK9nBDXEbmToWMMdVRs_xKLNehkTGgdsbab8KaIcimVU90dAHL4psPhWR-nQ3uqcyh6oywKvlMnlWgbT5tKcAATV47o0NXM7y0d_LHMCp_z03fEBhQw6UZ7QN3yU2FuzH_GAlXwfZktId64zuqW7VT-QXNkuiMamS4yT1qNDxWurXgRvJPjtGXAjN0GHRpghNdL5zXeoy_XWOLuSXrOiu2hJkYi0%26flowName%3DGeneralOAuthFlow%26as%3DS-183638053%253A1754587349082518%26client_id%3D628848313-5dku2rq31nupr5m4r53poh8haals7d27.apps.googleusercontent.com%23&amp;app_domain=https%3A%2F%2Fplaypal-backend-stsweng.vercel.app&amp;rart=ANgoxcc6X0FO6dVxc9L5iH9phYvUv0nvxMqoqS_U-r-iCwF3yK-HsSacJbkFa1CB1ZrkyR4waX4CgsJ4I3Zf9ymsWUiVd4P81JNkljKfoWBpTJkqWSOix4E"
+============================================================</msg>
+<arg>url=${GOOGLE_OAUTH_URL}</arg>
+<arg>timeout=10s</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until page has navigated to given ``url``.</doc>
+<status status="FAIL" start="2025-08-08T01:22:25.411079" elapsed="10.123436">TimeoutError: page.waitForNavigation: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://playpal-stsweng.vercel.app/auth/google" until "load"
+  navigated to "https://accounts.google.com/v3/signin/identifier?opparams=%253F&amp;dsh=S-183638053%3A1754587349082518&amp;client_id=628848313-5dku2rq31nupr5m4r53poh8haals7d27.apps.googleusercontent.com&amp;o2v=2&amp;redirect_uri=https%3A%2F%2Fplaypal-backend-stsweng.vercel.app%2Fauth%2Fgoogle%2Fcallback&amp;response_type=code&amp;scope=profile+email&amp;service=lso&amp;flowName=GeneralOAuthFlow&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPpBL5cRT_sWaj4E_Hn-vd9dDcP9nCqauuNuc-ZoUugtb6sjN7XEP1hNPRAqEalZ53CoAFzzQmLchdt_YXz4slqPNhRP8XJkJsVUCiga9acAhbNk6XNBvl8JutN5HcGXOM5dt0YhQO4nNOTcwtgTv2NNAIDWoFV6Ok99uyAXPqZdtZCWEJQbNYeZwmPi-xWFFlZlupu1Ek8PrMazn1l4YgbmJ--cezPFfL1XFX-d4KiXu1WLrSVf54k1gUUbYcJ_e8xz1wsFguSc72VDExZDUZTK9nBDXEbmToWMMdVRs_xKLNehkTGgdsbab8KaIcimVU90dAHL4psPhWR-nQ3uqcyh6oywKvlMnlWgbT5tKcAATV47o0NXM7y0d_LHMCp_z03fEBhQw6UZ7QN3yU2FuzH_GAlXwfZktId64zuqW7VT-QXNkuiMamS4yT1qNDxWurXgRvJPjtGXAjN0GHRpghNdL5zXeoy_XWOLuSXrOiu2hJkYi0%26flowName%3DGeneralOAuthFlow%26as%3DS-183638053%253A1754587349082518%26client_id%3D628848313-5dku2rq31nupr5m4r53poh8haals7d27.apps.googleusercontent.com%23&amp;app_domain=https%3A%2F%2Fplaypal-backend-stsweng.vercel.app&amp;rart=ANgoxcc6X0FO6dVxc9L5iH9phYvUv0nvxMqoqS_U-r-iCwF3yK-HsSacJbkFa1CB1ZrkyR4waX4CgsJ4I3Zf9ymsWUiVd4P81JNkljKfoWBpTJkqWSOix4E"
+============================================================</status>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-08-08T01:22:35.536020" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>/auth/google</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-08-08T01:22:35.536020" elapsed="0.000000"/>
+</kw>
+<msg time="2025-08-08T01:22:35.547415" level="INFO">Switching context to context=9e1ef6ee-fea5-448e-bac6-e5f50df23c6d in CURRENT</msg>
+<msg time="2025-08-08T01:22:35.553948" level="INFO">Successfully changed active context: context=9e1ef6ee-fea5-448e-bac6-e5f50df23c6d</msg>
+<msg time="2025-08-08T01:22:35.613595" level="INFO">Successfully closed Context</msg>
+<doc>Confirms clicking the login button redirects to Google OAuth</doc>
+<tag>oauth</tag>
+<tag>redirect</tag>
+<status status="FAIL" start="2025-08-08T01:22:23.770124" elapsed="11.766901">TimeoutError: page.waitForNavigation: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://playpal-stsweng.vercel.app/auth/google" until "load"
+  navigated to "https://accounts.google.com/v3/signin/identifier?opparams=%253F&amp;dsh=S-183638053%3A1754587349082518&amp;client_id=628848313-5dku2rq31nupr5m4r53poh8haals7d27.apps.googleusercontent.com&amp;o2v=2&amp;redirect_uri=https%3A%2F%2Fplaypal-backend-stsweng.vercel.app%2Fauth%2Fgoogle%2Fcallback&amp;response_type=code&amp;scope=profile+email&amp;service=lso&amp;flowName=GeneralOAuthFlow&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPpBL5cRT_sWaj4E_Hn-vd9dDcP9nCqauuNuc-ZoUugtb6sjN7XEP1hNPRAqEalZ53CoAFzzQmLchdt_YXz4slqPNhRP8XJkJsVUCiga9acAhbNk6XNBvl8JutN5HcGXOM5dt0YhQO4nNOTcwtgTv2NNAIDWoFV6Ok99uyAXPqZdtZCWEJQbNYeZwmPi-xWFFlZlupu1Ek8PrMazn1l4YgbmJ--cezPFfL1XFX-d4KiXu1WLrSVf54k1gUUbYcJ_e8xz1wsFguSc72VDExZDUZTK9nBDXEbmToWMMdVRs_xKLNehkTGgdsbab8KaIcimVU90dAHL4psPhWR-nQ3uqcyh6oywKvlMnlWgbT5tKcAATV47o0NXM7y0d_LHMCp_z03fEBhQw6UZ7QN3yU2FuzH_GAlXwfZktId64zuqW7VT-QXNkuiMamS4yT1qNDxWurXgRvJPjtGXAjN0GHRpghNdL5zXeoy_XWOLuSXrOiu2hJkYi0%26flowName%3DGeneralOAuthFlow%26as%3DS-183638053%253A1754587349082518%26client_id%3D628848313-5dku2rq31nupr5m4r53poh8haals7d27.apps.googleusercontent.com%23&amp;app_domain=https%3A%2F%2Fplaypal-backend-stsweng.vercel.app&amp;rart=ANgoxcc6X0FO6dVxc9L5iH9phYvUv0nvxMqoqS_U-r-iCwF3yK-HsSacJbkFa1CB1ZrkyR4waX4CgsJ4I3Zf9ymsWUiVd4P81JNkljKfoWBpTJkqWSOix4E"
+============================================================</status>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-08-08T01:22:35.841127" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-08T01:22:35.614592" elapsed="0.226535"/>
+</kw>
+<doc>Tests for verifying the login page renders correctly and redirects to Google OAuth</doc>
+<status status="FAIL" start="2025-08-08T01:22:19.556387" elapsed="16.284740"/>
+</suite>
+<suite id="s1-s6" name="Profile Tests" source="C:\Users\Admin\Documents\GitHub\playpal\test-scripts\profile_tests.robot">
+<test id="s1-s6-t1" name="Add Details To Profile" line="29">
+<kw name="Open Playpal Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:35.850177" level="INFO">Opening browser 'headlesschrome' to base url 'https://playpal-stsweng.vercel.app/profile'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-08T01:22:35.850177" elapsed="1.495923"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-08T01:22:37.347124" elapsed="0.020996"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:35.849171" elapsed="1.518949"/>
+</kw>
+<kw name="Edit Profile">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EDIT_PROFILE_LOCATOR}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-08T01:22:37.369122" elapsed="0.441961"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:37.811083" level="INFO">Clicking element 'css=div#user-edit'.</msg>
+<arg>${EDIT_PROFILE_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:37.811083" elapsed="0.058422"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:37.368120" elapsed="0.501385"/>
+</kw>
+<kw name="Add Valid Profile Details">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:37.871015" level="INFO">Selecting options from selection list 'id:sport' by label Basketball.</msg>
+<msg time="2025-08-08T01:22:37.942105" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-08T01:22:37.942105" level="FAIL">List with locator 'id:sport' not found.</msg>
+<arg>${SPORT_LIST}</arg>
+<arg>${SPORT}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="FAIL" start="2025-08-08T01:22:37.871015" elapsed="0.074272">List with locator 'id:sport' not found.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=save-profile</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-08T01:22:37.945287" elapsed="0.001012"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Profile updated</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-08-08T01:22:37.946299" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-08-08T01:22:37.871015" elapsed="0.075284">List with locator 'id:sport' not found.</status>
+</kw>
+<status status="FAIL" start="2025-08-08T01:22:35.849171" elapsed="2.097128">List with locator 'id:sport' not found.</status>
+</test>
+<test id="s1-s6-t2" name="View Profile" line="34">
+<kw name="Open Playpal Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:37.948615" level="INFO">Opening browser 'headlesschrome' to base url 'https://playpal-stsweng.vercel.app/profile'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-08T01:22:37.948615" elapsed="1.436989"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-08T01:22:39.385604" elapsed="0.024620"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:37.947289" elapsed="1.462935"/>
+</kw>
+<kw name="Should See Profile Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css=div.main-content</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-08-08T01:22:39.411206" elapsed="0.449767"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:39.411206" elapsed="0.450271"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:37.947289" elapsed="1.914188"/>
+</test>
+<test id="s1-s6-t3" name="Edit Details" line="38">
+<kw name="Open Playpal Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:39.862983" level="INFO">Opening browser 'headlesschrome' to base url 'https://playpal-stsweng.vercel.app/profile'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-08T01:22:39.862983" elapsed="1.363126"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-08T01:22:41.226109" elapsed="0.111899"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:39.861477" elapsed="1.476531"/>
+</kw>
+<kw name="Edit Profile">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EDIT_PROFILE_LOCATOR}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-08T01:22:41.339008" elapsed="0.458139"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:41.798156" level="INFO">Clicking element 'css=div#user-edit'.</msg>
+<arg>${EDIT_PROFILE_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-08T01:22:41.798156" elapsed="0.070326"/>
+</kw>
+<status status="PASS" start="2025-08-08T01:22:41.338008" elapsed="0.531476"/>
+</kw>
+<kw name="Add Valid Profile Details">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-08-08T01:22:41.869484" level="INFO">Selecting options from selection list 'id:sport' by label Basketball.</msg>
+<msg time="2025-08-08T01:22:41.961137" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-08T01:22:41.961137" level="FAIL">List with locator 'id:sport' not found.</msg>
+<arg>${SPORT_LIST}</arg>
+<arg>${SPORT}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="FAIL" start="2025-08-08T01:22:41.869484" elapsed="0.091653">List with locator 'id:sport' not found.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=save-profile</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-08T01:22:41.961137" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Profile updated</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-08-08T01:22:41.961137" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-08-08T01:22:41.869484" elapsed="0.093088">List with locator 'id:sport' not found.</status>
+</kw>
+<status status="FAIL" start="2025-08-08T01:22:39.861477" elapsed="2.101095">List with locator 'id:sport' not found.</status>
+</test>
+<status status="FAIL" start="2025-08-08T01:22:35.846150" elapsed="6.116422"/>
+</suite>
+<status status="FAIL" start="2025-08-08T01:22:08.239963" elapsed="33.723609"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">accessibility</stat>
+<stat pass="1" fail="0" skip="0">content</stat>
+<stat pass="1" fail="0" skip="0">dummy</stat>
+<stat pass="0" fail="1" skip="0">oauth</stat>
+<stat pass="0" fail="1" skip="0">redirect</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+<stat pass="3" fail="0" skip="0">ui</stat>
+</tag>
+<suite>
+<stat name="Test-Scripts" id="s1" pass="8" fail="3" skip="0">Test-Scripts</stat>
+<stat name="Cancel Post" id="s1-s1" pass="1" fail="0" skip="0">Test-Scripts.Cancel Post</stat>
+<stat name="Create Post" id="s1-s2" pass="1" fail="0" skip="0">Test-Scripts.Create Post</stat>
+<stat name="Dashboard Tests" id="s1-s3" pass="1" fail="0" skip="0">Test-Scripts.Dashboard Tests</stat>
+<stat name="Dummy Test" id="s1-s4" pass="1" fail="0" skip="0">Test-Scripts.Dummy Test</stat>
+<stat name="Login Tests" id="s1-s5" pass="3" fail="1" skip="0">Test-Scripts.Login Tests</stat>
+<stat name="Profile Tests" id="s1-s6" pass="1" fail="2" skip="0">Test-Scripts.Profile Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

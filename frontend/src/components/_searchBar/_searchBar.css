@@ -1,0 +1,119 @@
+@import '../../variables.css';
+
+.topbar-container {
+    height: auto;
+    box-sizing: border-box;
+    flex-direction: row;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.topbar-header {
+    background: var(--background-color);
+    z-index: 1000;
+    height: var(--topbar-height);
+    width: 100%;
+    box-sizing: border-box;
+    display:flex;
+    padding: 12px 20px 22px 20px;
+    position: fixed;
+    tab-size: 4;
+    text-size-adjust: 100%;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    justify-content: space-between;
+}
+
+.topbar-header img {
+    line-height: 24px;
+    height: 53px;
+    width: 127px;
+    cursor: pointer;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search::-webkit-input-placeholder{
+    font-weight: 100;
+}
+.search {
+    height: 48px;
+    width: 600px;
+    box-sizing: border-box;
+    background-color: var(--secondary-background-color);
+    border: none;
+    font-size: 14px;
+    font-weight: Bold;
+    color: #C4C4C4;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    margin-right: -2rem;
+}
+.search svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.search:focus {
+    outline: none;
+}
+.profile-header {
+    display: flex;
+    cursor: pointer;
+    background-color: var(--secondary-background-color);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 2px 10px 2px 10px;
+    white-space: nowrap;
+}
+.profile-img {
+    margin-left: 0.5em;
+    min-height: 45px;
+    min-width: 45px;
+    border-radius: 30px;
+    background-color: var(--empty-profile-img-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.search:hover, .search:focus{
+    box-shadow: 0 0 0.2em #F8F8F8;
+}
+
+@media (max-width: 960px) {
+    .topbar-header {
+        flex-direction: column;
+    }
+    .searchbar {
+        margin-top: 1em;
+        width: 100%;
+        margin-right: 20px;
+    }
+    .search {
+        border-radius: 0px;
+        width: 100%;
+        min-width: 120px;
+    }
+    .search:hover, .search:focus{
+    box-shadow: none;     
+    }
+    .profile-header{
+        display: none;
+    }
+}
+.search-button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}

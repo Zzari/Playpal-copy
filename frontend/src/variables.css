@@ -1,0 +1,43 @@
+:root{
+    --primary-color: #046A38; 
+    --secondary-color: #FFFFFF; 
+    --text-color: #FFFFFF;
+    --log-in-text-color: #000000;  
+    --background-color: #18141C;
+    --secondary-background-color: #1B1E26;
+    --post-button-color: #8d8d8d;
+    --empty-profile-img-color: #D9D9D9;
+    --border-color: #222126;
+    --post-font-color: #c0bbbb;
+    --font-family: 'Instrumental sans', sans-serif;
+    --border-radius: 40px;
+    --button-font-size: 16px;
+    --box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --topbar-height: 80px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-width: 350px;  
+    min-height: 500px;
+    
+}
+.content-wrapper {
+  padding-top: var(--topbar-height);
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 960px) {
+  :root {
+    --topbar-height: 220px;
+  }
+}

@@ -1,0 +1,30 @@
+*** Settings ***
+Library           SeleniumLibrary
+Suite Setup       Open Browser To Home Page
+Suite Teardown    Close Browser
+
+*** Variables ***
+${URL}            https://playpal-stsweng.vercel.app/
+${BROWSER}        headlesschrome
+
+*** Test Cases ***
+View Event Capacity :: Checks the available and filled slots for an event
+    [Documentation]    This test verifies that when viewing an event, the capacity details are shown (filled vs. available slots).
+    Go To Events Page
+    Click First Event In List
+    Wait Until Element Is Visible    css=div.event-capacity
+    Element Should Contain    css=div.event-capacity    Filled
+    Element Should Contain    css=div.event-capacity    Available
+
+*** Keywords ***
+Open Browser To Home Page
+    Open Browser    ${URL}    ${BROWSER}
+    Maximize Browser Window
+
+Go To Events Page
+    Click Link    Events
+    Wait Until Page Contains Element    css=div.event-card
+
+Click First Event In List
+    Click Element    css=div.event-card:first-child
+    Wait Until Page Contains Element    css=div.event-details
